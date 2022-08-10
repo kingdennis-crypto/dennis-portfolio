@@ -1,0 +1,119 @@
+.experienceButton {
+  padding: 10px 10px 10px 0px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.experienceActive {
+  border-right: 5px solid var(--red);
+}
+
+.tabContent {
+  display: none;
+}
+
+.tabContentShow {
+  display: block;
+}
+
+.experienceTitle {
+  font-size: 1.6rem;
+}
+
+.experienceSubtitle {
+  font-size: 0.8rem;
+  color: var(--subText);
+  margin-bottom: 20px;
+}
+
+/* MuiTab Custom CSS */
+#vertical-tabpanel {
+  margin-top: -28px;
+  padding-left: 25px;
+  max-width: 700px !important;
+}
+
+
+.MuiTab-wrapper {
+  font-size: 16px;
+  text-align: left;
+  align-items: flex-start !important;
+}
+
+.MuiButtonBase-root {
+  outline: none !important;
+  color: var(--subText) !important;
+  align-items: flex-start !important;
+  text-align: start !important;
+  /* width: 220px !important; */
+}
+
+.MuiButtonBase-root:focus {
+  color: var(--red) !important;
+}
+
+.Mui-selected {
+  color: var(--text) !important;
+}
+
+.MuiTabs-indicator {
+  background-color: var(--red) !important;
+}
+
+.PrivateTabIndicator-colorSecondary-5 {
+  background-color: var(--red) !important;
+}
+
+.jss5 {
+  background-color: var(--red) !important;
+}
+
+.makeStyles-tabs-2 {
+  border-right: 1px solid var(--red);
+}
+
+#experience .MuiTab-root {
+  padding: 6px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #experience {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .jss1 {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+
+  .joblist-job-title {
+    font-size: 22px;
+  }
+
+  .joblist-job-company {
+    font-size: 22px;
+  }
+}
+
+/* End of MuiTabs custom CSS */
+
+.jobTitle {
+  font-size: 1.6rem;
+  color: var(--text)
+}
+
+.jobDuration {
+  color: var(--subText);
+  text-transform: uppercase;
+}
+
+.jobDescription {
+  margin-top: 20px;
+}

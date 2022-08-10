@@ -10,13 +10,21 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
+    "online": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.0",
     "gatsby": "^4.20.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-typewriter-effect": "^1.1.0",
+    "typewriter-effect": "^2.19.0"
   }
 }
