@@ -10,7 +10,12 @@ import SectionTitle from './sectionTitle';
 import '../styles/experience.css';
 import FadeInSection from './fadeInSection';
 
-const isHorizontal = window.innerWidth < 600;
+let isHorizontal = false;
+
+if (typeof window !== 'undefined') {
+  // detect window screen width function
+  isHorizontal = window.innerWidth < 600;
+}
 
 const jobList = [
   {
