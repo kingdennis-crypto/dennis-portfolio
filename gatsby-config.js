@@ -3,5 +3,5 @@ module.exports = {
     title: `Dennis Moes Portfolio`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-netlify-cms`],
 }

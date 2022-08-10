@@ -22,6 +22,8 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.0",
     "gatsby": "^4.20.0",
+    "gatsby-plugin-netlify-cms": "^6.20.0",
+    "netlify-cms-app": "^2.15.72",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-typewriter-effect": "^1.1.0",
