@@ -2,7 +2,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Container } from '@mui/system';
 import SectionTitle from './sectionTitle';
@@ -63,7 +62,7 @@ function TabPanel(props) {
       >
         {value === index && (
           <Box p={3}>
-            <Typography>{children}</Typography>
+            <div>{children}</div>
           </Box>
         )}
       </div>
@@ -78,7 +77,7 @@ function TabPanel(props) {
       >
         {value === index && (
           <Box p={3}>
-            <Typography>{children}</Typography>
+            <div>{children}</div>
           </Box>
         )}
       </div>
@@ -128,17 +127,17 @@ const Experience = () => {
               aria-label="Vertical tabs example"
             >
               {jobList.map((item, index) => (
-                <Tab label={item.company} {...a11yProps(index)} />
+                <Tab key={index} label={item.company} {...a11yProps(index)} />
               ))}
             </Tabs>
             {jobList.map((item, index) => (
-              <TabPanel value={value} index={index}>
+              <TabPanel key={index} value={value} index={index}>
                 <div className='jobTitle'>{item.title} | <span className='standoutText'>{item.company}</span></div>
                 <div className='jobDuration'>{item.duration}</div>
                 <div className='jobDescription'>
                   <ul>
                     {item.description.map((item, index) => (
-                      <li className='experienceItem' style={{ marginBottom: 20 }}>{item}</li>
+                      <li key={index} className='experienceItem' style={{ marginBottom: 20 }}>{item}</li>
                     ))}
                   </ul>
                 </div>

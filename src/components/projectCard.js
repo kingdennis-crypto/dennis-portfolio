@@ -6,7 +6,7 @@ import { Card, CardContent, Grid } from '@mui/material';
 import FadeInSection from './fadeInSection';
 
 const ProjectCard = (props) => {
-  const { name, desc, techStack, github, index, ...other } = props;
+  const { name, desc, techStack, github, index } = props;
 
   return (
     <Grid item xs={12} md={6} lg={4} >
@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
             <Grid container justifyContent='space-between' alignItems='center'>
               <CodeIcon sx={{ fontSize: 38, color: '#E23E57' }} />
               {github && (
-                <a target="_blank" href={github} className='githubLink'>
+                <a target="_blank" rel='noopener noreferrer' href={github} className='githubLink'>
                   <GitHubIcon sx={{ fontSize: 38 }} />
                 </a>
               )}

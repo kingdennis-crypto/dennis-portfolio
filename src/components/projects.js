@@ -35,7 +35,7 @@ const Projects = () => {
           <div style={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               {projects.map((item, index) => (
-                <ProjectCard index={index} {...item} />
+                <ProjectCard key={index} index={index} {...item} />
               ))}
             </Grid>
           </div>

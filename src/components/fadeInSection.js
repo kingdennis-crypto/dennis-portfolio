@@ -5,6 +5,8 @@ const FadeInSection = (props) => {
   const domRef = React.useRef();
 
   React.useEffect(() => {
+    let observerRefValue = null; // <-- variable to hold ref value
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -16,9 +18,15 @@ const FadeInSection = (props) => {
       // rootMargin: "-100px"
     });
 
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
-  }, []);
+    if (domRef.current) {
+      observer.observe(domRef.current);
+      observerRefValue = domRef.current; // Save ref value
+    }
+
+    return () => {
+      if (observerRefValue) observer.unobserve(observerRefValue) // Use saved value
+    }
+  }, [domRef]);
 
   return (
     <div

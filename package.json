@@ -22,6 +22,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.0",
     "gatsby": "^4.20.0",
+    "gatsby-plugin-manifest": "^4.20.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-typewriter-effect": "^1.1.0",

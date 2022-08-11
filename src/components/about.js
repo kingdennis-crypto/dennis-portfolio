@@ -11,7 +11,7 @@ const About = () => {
           <SectionTitle title='Over mij' />
           <div className='maxWidth'>
             <p>Hallo! Mijn naam is Dennis en ik vind het leuk om dingen te creëren. Mijn interesse in programmeren begon in 2018 toen een klasgenoot me uitdaagde om een mobiele app te maken. Het bleek dat ik door die uitdaging mijn passie in programmeren had gevonden.</p>
-            <p>Snel vooruit naar vandaag, en ik heb al een diploma in mijn zak van <a target='_blank' href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">Regio College</a>. Na mijn afstuderen, wilde ik hoger onderwijs zoeken aan de <a target='_blank' href="https://www.hva.nl/opleiding/hbo-ict/hbo-ict.html">Hogeschool van Amsterdam</a>. Waar ik momenteel een tweedejaars student ben die Software Engineering studeert.</p>
+            <p>Snel vooruit naar vandaag, en ik heb al een diploma in mijn zak van <a target='_blank' rel='noopener noreferrer' href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">Regio College</a>. Na mijn afstuderen, wilde ik hoger onderwijs zoeken aan de <a target='_blank' rel='noopener noreferrer' href="https://www.hva.nl/opleiding/hbo-ict/hbo-ict.html">Hogeschool van Amsterdam</a>. Waar ik momenteel een tweedejaars student ben die Software Engineering studeert.</p>
             <Grid container rowSpacing={2} columnSpacing={4}>
               <Grid item>
                 <ul>
