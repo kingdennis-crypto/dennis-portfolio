@@ -84,3 +84,17 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+section {
+  margin-bottom: 10vh;
+}
+
+.activitiesList::before {
+  content: "\00BB";
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.activitiesList {
+  margin-bottom: 10px;
+}
