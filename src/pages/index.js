@@ -69,31 +69,12 @@ const experienceData = [
 
 const projectData = [
   {
-    title: "Eager Willow",
+    title: "Musicbox",
     type: "mobile",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam magna eu quam vehicula molestie. Maecenas tristique leo risus, pulvinar efficitur justo mollis ut.",
-    tags: "Flutter, NodeJS",
-    github: "https://google.com"
-  },
-  {
-    title: "The Green Birth",
-    type: "mobile",
-    description: "Lorem ipsum ",
-    tags: "Flutter, NodeJS",
-    github: "https://google.com"
-  },
-  {
-    title: "Flames of Voyages",
-    type: "web",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam magna eu quam vehicula molestie.",
-    tags: "Flutter, NodeJS",
-    github: "https://google.com"
-  },
-  {
-    title: "The Roses's Shores",
-    type: "backend",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam magna eu quam vehicula molestie.",
-    tags: "Flutter, NodeJS",
+    description: "A flutter app design of a music player app like spotify or apple music.",
+    tags: "Flutter",
+    wip: true,
+    github: "https://github.com/kingdennis-crypto/MusicBox"
   }
 ]
 
@@ -124,26 +105,9 @@ const IndexPage = () => {
             <div className="w-full sm:w-1/2">
               <p className="w-2/3 text-black dark:text-white duration-700">I am a full-stack developer based in Amsterdam with a passion for building digital services/stuff. I have a skillset ranging from launching products, planning and or designing the products to solve real-life problems with code.</p>
             </div>
-            
           </section>
           <section id="experience" className="transition-colors duration-700">
-            <p className="text-4xl mb-5 dark:text-white transition-colors duration-700">Experience</p>
-            <ol class="relative border-l border-gray-200 dark:border-gray-700 max-w-4xl">
-              {experienceData.map((item, index) => (
-                <li key={index} class="ml-4 mb-5">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.start} - {item.end}</time>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                    {item.title} | <span className="text-blue-700 dark:text-blue-500">{item.company}</span>
-                  </h3>
-                  <ul>
-                    {item.activities.map((item) => (
-                      <li className="activitiesList text-slate-800 dark:text-slate-200">{item}</li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ol>
+            
           </section>
           <section id="projects">
             <p className="text-4xl mb-5 dark:text-white transition-colors duration-700">Projects</p>
@@ -164,6 +128,11 @@ const IndexPage = () => {
                   <p className="text-xl font-bold dark:text-white transition-colors duration-700">{item.title}</p>
                   <p className="mt-3 mb-5 dark:text-white transition-colors duration-700">{item.description}</p>
                   <p className="mt-auto text-sm text-slate-500 dark:text-slate-300 transition-colors duration-700">{item.tags}</p>
+                  {item.wip && (
+                    <div className="py-1 px-3 mt-2 rounded-md font-medium bg-yellow-300 w-fit">
+                      <p>🚧 Work in progress</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
