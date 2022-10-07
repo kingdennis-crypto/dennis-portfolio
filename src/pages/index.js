@@ -115,7 +115,7 @@ const IndexPage = () => {
               {projectData.map((item, index) => (
                 <div
                   key={index}
-                  className="w-full h-full p-5 flex flex-col overflow-hidden rounded-lg shadow-md bg-white  dark:bg-slate-700 dark:shadow-none dark:hover:shadow-none hover:shadow-xl hover:-translate-y-2 transition-all duration-200 ease-in-out"
+                  className="w-full h-full p-5 flex flex-col overflow-hidden rounded-lg shadow-md bg-white  dark:bg-slate-700 dark:shadow-none dark:hover:shadow-none hover:shadow-xl hover:-translate-y-2 transition-all duration-700 ease-in-out"
                 >
                   <div className="flex flex-row justify-between mb-2">
                     <FolderOpen fontSize="large" className="dark:text-slate-200 text-slate-700 transistion-colors duration-700" />
